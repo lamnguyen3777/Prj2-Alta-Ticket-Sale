@@ -1,0 +1,17 @@
+@import './sider/sider.css';
+@import './header/header.css';
+@import './content/content.css';
+
+.index-layout {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: #F9F6F4;
+    border-radius: 24px;
+}
+
+.right-layout {
+    position: absolute;
+    left: 321px;
+    top: 85px;
+}

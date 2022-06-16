@@ -1,0 +1,9 @@
+.content-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttonGroup > Button {
+    margin: 20px;
+}

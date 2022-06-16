@@ -1,0 +1,10 @@
+.content-layout {
+    position: absolute;
+    width: 1567px !important;
+    height: 963px;
+    left: 321px;
+    top: 85px;
+    padding: 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}

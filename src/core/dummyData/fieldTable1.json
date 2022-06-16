@@ -1,0 +1,34 @@
+[
+    {
+        "title": "STT",
+        "dataIndex": "STT"
+    },
+    {
+        "title": "Booking code",
+        "dataIndex": "bookingCode"
+    },
+    {
+        "title": "Số vé",
+        "dataIndex": "ticketNum"
+    },
+    {
+        "title": "Tên sự kiện",
+        "dataIndex": "event"
+    },
+    {
+        "title": "Tình trạng sử dụng",
+        "dataIndex": "tikectStatus"
+    },
+    {
+        "title": "Ngày sử dụng",
+        "dataIndex": "usingDate"
+    },
+    {
+        "title": "Ngày xuất vé",
+        "dataIndex": "saledDate"
+    },
+    {
+        "title": "Cổng check-in",
+        "dataIndex": "checkInGate"
+    }
+]

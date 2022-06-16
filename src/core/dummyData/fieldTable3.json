@@ -1,0 +1,34 @@
+[
+    {
+        "title": "STT",
+        "dataIndex": "STT"
+    },
+    {
+        "title": "Mã gói",
+        "dataIndex": "groupCode"
+    },
+    {
+        "title": "Tên gói vé",
+        "dataIndex": "groupName"
+    },
+    {
+        "title": "Ngày sử dụng",
+        "dataIndex": "usingDate"
+    },
+    {
+        "title": "Ngày hết hạn",
+        "dataIndex": "expDate"
+    },
+    {
+        "title": "Giá vé (VNĐ/Vé)",
+        "dataIndex": "costTicket"
+    },
+    {
+        "title": "Giá Combo (VNĐ/Combo)",
+        "dataIndex": "costCombo"
+    },
+    {
+        "title": "Tình trạng",
+        "dataIndex": "status"
+    }
+]

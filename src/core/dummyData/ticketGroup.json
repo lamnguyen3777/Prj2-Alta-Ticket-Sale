@@ -1,0 +1,22 @@
+[
+    {
+        "STT": 1,
+        "groupCode": "ABC123",
+        "groupName": "Gói gia đình",
+        "usingDate": "08:00:00 14/04/2021",
+        "expDate": "23:00:00 14/04/2021",
+        "costTicket": 90000,
+        "costCombo": { "cost": 360000, "SL": 4 },
+        "status": true
+    },
+    {
+        "STT": 2,
+        "groupCode": "123ABC",
+        "groupName": "Gói sự kiện",
+        "usingDate": "08:00:00 14/04/2021",
+        "expDate": "23:00:00 14/04/2021",
+        "costTicket": 20000,
+        "costCombo": {},
+        "status": false
+    }
+]

@@ -1,0 +1,79 @@
+.sider-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    background: #F9F6F4;
+    position: absolute;
+    width: 252px !important;
+    height: 572px;
+    left: 33px;
+    top: 17px;
+}
+
+.logo {
+    width: 133px;
+    height: 58px;
+    margin-bottom: 59px;
+}
+
+.logo-icon {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    background: #F9F6F4;
+    width: 252px;
+    height: 417px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 16px 15px 24px;
+    gap: 12px;
+    width: 252px;
+    height: 56px;
+    border-radius: 8px;
+}
+
+.item-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+}
+
+.item-text {
+    width: 93px;
+    height: 26px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1E0D03;
+    opacity: 0.6;
+}
+
+.menu-item:active,
+.menu-item::selection,
+.menu-item:hover, 
+.item-icon::selection,
+.item-icon:active,
+.item-icon:hover,
+.item-text::selection,
+.item-text:active,
+.item-text:hover {
+    background: #FFB800 !important;
+    color: #FFFFFF !important;
+    border-radius: 8px;
+}

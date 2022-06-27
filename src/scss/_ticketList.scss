@@ -1,0 +1,109 @@
+.ticket__list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+  .ticket__features {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    margin-bottom: 31px;
+  }
+  &__search {
+    background-color: $gray-light;
+  }
+  &__action {
+    display: flex;
+    gap: 10px;
+    button {
+      height: 100%;
+      font-weight: 700;
+      font-size: 18px;
+      border: 1px solid $orange-yellow;
+      border-radius: 10px;
+      color: $orange-yellow;
+      background-color: white;
+      cursor: pointer;
+      font-style: normal;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      i {
+        margin-right: 12px;
+        font-size: 22px;
+      }
+      a {
+        color: inherit;
+      }
+    }
+    .button--fill {
+      background-color: $orange-yellow;
+      color: white;
+      padding: 11px 24px;
+    }
+  }
+  .ticket__list__table {
+    tr {
+      &:hover {
+        i {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .tickets__options__tooltip {
+    position: relative;
+    .tickets__options {
+      // opacity: 0;
+      // visibility: hidden;
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+    .item__tooltip {
+      position: absolute;
+      bottom: 0px;
+      right: 30px;
+      width: 159px;
+      height: 56px;
+      background-color: $date-line;
+      border-radius: 8px;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s;
+      padding: 8px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      li{
+        font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover{
+      color: $orange;
+    }
+
+      }
+      .triangle {
+        background-color: $date-line;
+        clip-path: polygon(0 0, 50% 50%, 0 100%);
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 50%;
+        right: -14px;
+        transform: translateY(-50%);
+      }
+    }
+    .display {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

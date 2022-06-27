@@ -1,0 +1,54 @@
+.time__picker__main {
+  position: relative;
+  .time__picker {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 150px;
+    height: 0;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    
+    &--display{
+        height: 300px;
+        opacity: 1;
+        visibility: visible;
+    }
+    &__item {
+      // display: block;
+      overflow-y: scroll;
+      width: 200px;
+      background-color: $gray-light;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+        padding: 10px 0;
+      &::-webkit-scrollbar {
+        width: 5px;
+        background-color: $gray;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $orange-yellow;
+        border-radius: 10px;
+      }
+      span {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        &:hover {
+          color: $orange-yellow;
+        }
+      }
+      span.active{
+          color: $orange-yellow;
+          font-weight: 700;
+      }
+    }
+  }
+}

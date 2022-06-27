@@ -1,0 +1,170 @@
+.home {
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__profit {
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin-bottom: 27px;
+    }
+    &__date {
+      min-width: 153px;
+      height: 38px;
+      border: 1px solid #e5e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 13px;
+      font-size: 14px;
+      font-weight: 22px;
+      font-weight: 500;
+      border-radius: 8px;
+      position: relative;
+      i {
+        font-size: 25px;
+        color: $orange-yellow;
+      }
+
+      &:hover .date__close{
+        display: block;
+      }
+      &:hover .date__icon{
+        display: none;
+      }
+      .date__icon{
+
+      }
+      .date__close{
+        color: rgb(204, 204, 204);
+        cursor: pointer;
+        display: none;
+        
+        &:hover{
+          color: rgb(173, 173, 173);
+        }
+        
+      }
+    }
+    &__time {
+      // width: calc(129px - 24px);
+      width: calc(129px);
+      // height: 20px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      select {
+        width: 83px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: "";
+      }
+
+      i {
+        font-size: 28px;
+      }
+    }
+  }
+  .home__chart {
+    height: 274px;
+    // background-color: $gray;
+  }
+  .home__revenue {
+    margin: 40px 0 83px 0;
+    p,
+    span {
+      font-weight: 500;
+      font-size: 14px;
+    }
+    p:first-child {
+      line-height: 22px;
+      color: $text-light;
+      opacity: 0.5;
+    }
+    p:last-child {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      span {
+      }
+    }
+  }
+  .home__package {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    &__chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .home__chart__title {
+        margin-bottom: 25px;
+      }
+      .home__chart__pie {
+        width: 246px;
+        height: 246px;
+        // border-radius: 50%;
+        // background-color: blue;
+        position: relative;
+        // background-color: cyan;
+
+        .chart__pie__tooltip {
+          padding: 12px;
+          position: absolute;
+          background-color: white;
+          box-shadow: 0px 0px 50px rgba(50, 50, 71, 0.25);
+          border-radius: 12px;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 22px;
+        }
+
+        .chart__pie__used {
+          position: absolute;
+          left: -5px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .chart__pie__unused {
+          position: absolute;
+          right: -5px;
+          top: 40%;
+          transform: translateY(-50%);
+        }
+      }
+      .home__chart__note {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        span {
+          font-size: 14px;
+          font-weight: 400;
+        }
+        .chart__note__unused,
+        .chart__note__used {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          span:first-child {
+            width: 44px;
+            height: 20px;
+            border-radius: 4px;
+            background-color: beige;
+            display: inline-block;
+          }
+        }
+        .chart__note__used {
+          span:first-child {
+            background-color: $blue;
+          }
+        }
+        .chart__note__unused {
+          span:first-child {
+            background-color: $orange;
+          }
+        }
+      }
+    }
+  }
+}

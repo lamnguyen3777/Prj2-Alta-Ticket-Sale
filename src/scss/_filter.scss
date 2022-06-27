@@ -1,0 +1,113 @@
+.filter {
+  position: absolute;
+  width: calc(634px - 61px);
+  // height: calc(454px - 24px);
+  border-radius: 16px;
+  background-color: white;
+  padding: 24px 29px 24px 32px;
+  // padding: 24px 29px 0 32px;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  &--display {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 27px;
+  }
+  &__date {
+    display: flex;
+    gap: 200px;
+
+    &__picker {
+      height: 40px;
+      width: calc(143px);
+      border-radius: 8px;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &>div{
+        width: calc(100% - 20px);
+        font-size: 16px;
+      }
+    }
+  }
+  &__from,
+  &__to {
+    margin-bottom: 20px;
+  }
+  &__sub__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 5px;
+  }
+  &__status {
+    margin-bottom: 20px;
+    p {
+      margin-bottom: 5px;
+    }
+    label {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.5px;
+    }
+    input {
+    }
+
+    .filter__radio {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  &__checking {
+    margin-bottom: 40px;
+    p {
+      margin-bottom: 8px;
+    }
+
+    &__checkboxs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 24px;
+      gap: 14px 100px;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.5px;
+    }
+  }
+  &__btn {
+    width: 160px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $orange-yellow;
+    border: 1px solid $orange-yellow;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: auto;
+    line-height: 26px;
+  }
+}

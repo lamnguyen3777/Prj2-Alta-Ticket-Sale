@@ -1,0 +1,44 @@
+.ant-pagination {
+  justify-content: center !important;
+
+  li {
+    min-width: 25px !important;
+    height: 25px !important;
+    border-radius: 10% !important;
+    line-height: unset;
+    button,
+    a {
+      border-radius: 10% !important;
+    }
+  }
+  &-item-active {
+    border: 1px solid $orange-yellow !important;
+
+    a {
+      color: $orange-yellow !important;
+    }
+  }
+}
+
+.ant-table-wrapper {
+  height: 100%;
+}
+.ant-spin-nested-loading {
+  height: 100%;
+}
+
+.ant-spin-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.ant-table-tbody > tr > td{
+    padding: 10px 16px!important;
+}
+.ant-table-tbody{
+  tr:nth-child(even){
+    background-color: $gray-list!important;
+  }
+}

@@ -1,0 +1,158 @@
+.ticket__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  min-width: calc(758px - 64px);
+  // width: calc(758px - 64px);
+  // height: calc(628px - 58px);
+  border-radius: 16px;
+  border: 1px solid black;
+  background-color: white;
+  z-index: 2;
+  padding: 24px 32px 32px 32px;
+  font-size: 16px;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  button {
+    border: 1px solid $orange-yellow;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $orange-yellow;
+  }
+  button.button--fill {
+    background-color: $orange;
+    color: white;
+  }
+  &--display {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .ticket__modal__title {
+    margin-bottom: 27px;
+  }
+  .sub__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $text-light;
+    opacity: 0.7;
+    margin-bottom: 5px;
+
+    span{
+      color: $expire-status;
+    }
+  }
+  .name__input {
+    width: calc(367px - 32px);
+    height: calc(40px);
+    // height: calc(40px - 20px);
+    border-radius: 8px;
+    padding: 10px 16px;
+    border: 1px solid $border;
+    line-height: 19.5px;
+    font-size: 16px;
+    color: $search-text;
+    margin-bottom: 25px;
+
+    ::placeholder{
+      color: $border;
+    }
+  }
+  .ticket__modal__name {
+    display: flex;
+    justify-content: space-between;
+    &__item.item__id {
+      input {
+        max-width: calc(245px - 32px);
+      }
+    }
+  }
+  .ticket__modal__date {
+    display: flex;
+    gap: 39px;
+    margin-bottom: 24px;
+    .modal__date__main {
+      display: flex;
+      gap: 10px;
+    }
+    .modal__date {
+      border-radius: 8px;
+      // padding: 10px 12px;
+      //   max-width: calc(142px - 24px);
+      input {
+        max-width: calc(84px + 32px);
+        color: $border;
+        font-size: 16px;
+      }
+    }
+  }
+  .ticket__modal__price {
+    // margin-bottom: 24px;
+    .modal__price__item {
+      margin-bottom: 12px;
+    }
+    .modal__price__title {
+      margin-bottom: 13px;
+    }
+    .price__input__line {
+      display: flex;
+      gap: 8px;
+      height: 40px;
+      align-items: center;
+    }
+    input.price__input {
+    }
+    input.ticket__price,
+    input.ticket__price--short {
+      padding: 10px 12px;
+      border-radius: 8px;
+      background-color: $thead-color;
+      max-width: 148px;
+      line-height: 19.5px;
+      &--short {
+        max-width: 72px;
+      }
+    }
+  }
+  .ticket__modal__status {
+    margin-bottom: 16px;
+    select {
+      border-radius: 8px;
+      border: 1px solid $border;
+      padding: 10px 12px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.5px;
+      max-height: calc(42px);
+      font-family: $primary-font;
+    }
+  }
+  .ticket__modal__note {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 26.5px;
+    span {
+      color: $expire-status;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .ticket__modal__actions {
+    margin: auto;
+    width: 344px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
